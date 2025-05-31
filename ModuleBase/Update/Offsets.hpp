@@ -32,6 +32,8 @@ namespace Offsets {
 	inline const uintptr_t KTable = REBASE(0x62D04B0);
 
 
+	inline const uintptr_t Luau_CompileSrc = REBASE(0x15C7AA0);
+
 
 	// FIRECLICKDETECTOR
 	inline const uintptr_t FireMouseClick = REBASE(0x1C4E4E0);///
@@ -89,6 +91,9 @@ namespace RBX {
 
 	using TLuaVM__Load = int(__fastcall*)(lua_State*, void*, const char*, int);
 	inline auto LuaVM__Load = reinterpret_cast<TLuaVM__Load>(Offsets::LuaVM__Load);
+
+	using TLuau_CompileSrc = int(__fastcall*)(int64_t, int64_t);
+	inline auto Luau_CompileSrc = reinterpret_cast<TLuau_CompileSrc>(Offsets::Luau_CompileSrc);
 
 	using TTask__Defer = int(__fastcall*)(lua_State*);
 	inline auto Task__Defer = reinterpret_cast<TTask__Defer>(Offsets::Task__Defer);
