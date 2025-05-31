@@ -74,7 +74,7 @@
     <ExternalIncludePath>E:\VSsources\Cloudy-Injector\Cldy\Injector\Update;E:\VSsources\Cloudy-Injector\Cldy\Injector\Secuity;E:\VSsources\Cloudy-Injector\Cldy\Injector\Injection;E:\VSsources\Cloudy-Injector\Cldy\Injector\Importer\Utils;E:\VSsources\Cloudy-Injector\Cldy\Injector\Importer;E:\VSsources\Cloudy-Injector\Cldy\Injector\ICHook;E:\VSsources\Cloudy-Injector\Cldy\Injector;E:\VSsources\Cloudy-Injector\Cldy\Injector\Dependencies;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>E:\VSsources\Cloudy-Injector\Cldy\Injector;E:\VSsources\Cloudy-Injector\Cldy\Injector\Update;E:\VSsources\Cloudy-Injector\Cldy\Injector\Secuity;E:\VSsources\Cloudy-Injector\Cldy\Injector\Injection;E:\VSsources\Cloudy-Injector\Cldy\Injector\Importer\Utils;E:\VSsources\Cloudy-Injector\Cldy\Injector\Importer;E:\VSsources\Cloudy-Injector\Cldy\Injector\ICHook;E:\VSsources\Cloudy-Injector\Cldy\Injector\Dependencies;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Dependencies\;$(SolutionDir)ICHook;$(SolutionDir)Idk;$(SolutionDir)Injection;$(SolutionDir)Update;$(SolutionDir);$(IncludePath)</IncludePath>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>Injector</TargetName>
   </PropertyGroup>
@@ -139,7 +139,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Dependencies/ichooker.obj;Dependencies/syscallcaller.obj;Dependencies/tools_.obj;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\Volxp\Documents\vcpjkg\vcpkg\installed\x64-windows-static\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
