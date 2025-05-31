@@ -74,7 +74,7 @@
     <ExternalIncludePath>E:\VSsources\Cloudy-Injector\Cldy\Injector\Update;E:\VSsources\Cloudy-Injector\Cldy\Injector\Secuity;E:\VSsources\Cloudy-Injector\Cldy\Injector\Injection;E:\VSsources\Cloudy-Injector\Cldy\Injector\Importer\Utils;E:\VSsources\Cloudy-Injector\Cldy\Injector\Importer;E:\VSsources\Cloudy-Injector\Cldy\Injector\ICHook;E:\VSsources\Cloudy-Injector\Cldy\Injector;E:\VSsources\Cloudy-Injector\Cldy\Injector\Dependencies;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)Dependencies\;$(SolutionDir)ICHook;$(SolutionDir)Idk;$(SolutionDir)Injection;$(SolutionDir)Update;$(SolutionDir);$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Injector\Dependencies\;$(SolutionDir)Injector\ICHook;$(SolutionDir)Injector\Idk;$(SolutionDir)Injector\Injection;$(SolutionDir)Injector\Update;$(SolutionDir)Injector\;$(IncludePath)</IncludePath>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>Injector</TargetName>
   </PropertyGroup>
