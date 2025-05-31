@@ -8,7 +8,7 @@
 #define END_REGISTRATION {NULL, NULL}
 
 
-
+// THIS ENVIRONMENT IS FROM BYTECODE'S MODULE!
 
 namespace Environment {
 

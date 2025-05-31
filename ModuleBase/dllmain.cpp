@@ -4,7 +4,7 @@
 
 void threadA() {
     RBX::Print(1, "injecting...");
-    Sleep(6000);
+    Sleep(3000);
     Globals::DataModel = Utils::Task->GetDataModel();
     if (!Utils::Task->isGameLoaded(Globals::DataModel)) {        // make sure injected ingame (ingame = 31, home = 15)
         std::this_thread::sleep_for(std::chrono::milliseconds(400));

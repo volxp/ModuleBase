@@ -30,7 +30,7 @@ inline bool equals_ignore_case(const std::string& a, const std::string& b)
 
 namespace Filesystem {
 	static std::filesystem::path localAppdata = getenv("LOCALAPPDATA");
-	static std::filesystem::path realLibrary = localAppdata / "CLDY";
+	static std::filesystem::path realLibrary = localAppdata / "Base";
 	static std::filesystem::path workspace = realLibrary / "Workspace";
 
 
