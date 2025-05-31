@@ -75,6 +75,7 @@ namespace Offsets {
 	inline const uintptr_t FpsCap = 0x1B0;///
 	inline const uintptr_t JobStart = 0x1D0;///
 	inline const uintptr_t JobName = 0x18;///
+	inline const uintptr_t Require_bypass = 0x6E0;
 
 }
 namespace Globals {

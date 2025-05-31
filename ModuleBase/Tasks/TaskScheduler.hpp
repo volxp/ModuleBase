@@ -29,8 +29,8 @@ namespace Base {
 
 			void SetThreadCap(lua_State* l, int lvl, uintptr_t c) {
 				auto extraSpace = (uintptr_t)(l->userdata);
-				*(uintptr_t*)(extraSpace + 0x48) = c; //
-				*(uintptr_t*)(extraSpace + 0x30) = lvl; //
+				*reinterpret_cast<uintptr_t*>(extraSpace + 0x48) = c;
+				*reinterpret_cast<uintptr_t*>(extraSpace + 0x30) = lvl;
 			}
 
 			__forceinline void PatchCFG(uintptr_t address) {

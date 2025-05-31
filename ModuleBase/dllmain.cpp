@@ -4,7 +4,7 @@
 
 void threadA() {
     RBX::Print(1, "injecting...");
-    Sleep(3000);
+    Sleep(4000);
     Globals::DataModel = Utils::Task->GetDataModel();
     if (!Utils::Task->isGameLoaded(Globals::DataModel)) {        // make sure injected ingame (ingame = 31, home = 15)
         std::this_thread::sleep_for(std::chrono::milliseconds(400));
@@ -15,7 +15,7 @@ void threadA() {
     if (!Utils::Task->CreateThread())
         return threadA();
     std::this_thread::sleep_for(std::chrono::seconds(2));
-    Environment::Initializes->Env(Globals::exploitThread);
+    Environment::Initializes->Env(Globals::exploitThread); // --> To get the file system work, Create a folder called "Base" in your LocalAppdata folder, then create the Workspace folder inside of it. (automise it youself)
    // Execution::cBase->Execute(Globals::exploitThread, "print('Injected')");
     while (true) {
 

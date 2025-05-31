@@ -47,7 +47,7 @@ namespace Utils {
 			uintptr_t ScriptContext = GetScriptContext(DataModel);
 			if (!ScriptContext)
 				return 0x0;
-			*(BYTE*)(ScriptContext + 0x6E0) = 1;
+			*reinterpret_cast<BYTE*>(ScriptContext + Offsets::Require_bypass) = 1;
 			uintptr_t GlobalState = GetGlobalState(ScriptContext + Offsets::GlobalState);
 			luaState = DecryptLuaState(GlobalState + Offsets::EncryptedState);
 
