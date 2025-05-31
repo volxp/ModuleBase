@@ -195,6 +195,12 @@
     <ClCompile Include="NamedPipe.hpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Environment\Environment.hpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment\Libs\FileSystem\FileSystem.hpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dependencies\Luau\Ast\include\Luau\Allocator.h">

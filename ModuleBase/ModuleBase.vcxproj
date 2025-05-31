@@ -75,7 +75,7 @@
     <IncludePath>$(SolutionDir)\ModuleBase;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)ModuleBase;$(SolutionDir)ModuleBase\Dependencies\Luau\Ast\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\Common\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\Compiler\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\VM\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\Ast\src\;$(SolutionDir)ModuleBase\Dependencies\Luau\Compiler\src\;$(SolutionDir)ModuleBase\Dependencies\Luau\VM\src\;$(SolutionDir)ModuleBase\Dependencies\zstd\include\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)ModuleBase;$(SolutionDir)ModuleBase\Dependencies\Luau\Ast\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\Common\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\Compiler\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\VM\include\;$(SolutionDir)ModuleBase\Dependencies\Luau\Ast\src\;$(SolutionDir)ModuleBase\Dependencies\Luau\Compiler\src\;$(SolutionDir)ModuleBase\Dependencies\Luau\VM\src\;$(SolutionDir)ModuleBase\Dependencies\zstd\include\;$(SolutionDir)ModuleBase\Dependencies\lz4\include\;$(IncludePath)</IncludePath>
     <TargetName>Module</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -146,8 +146,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>$(SolutionDir)ModuleBase\Dependencies\zstd\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>zstd_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ModuleBase\Dependencies\lz4\lib\;$(SolutionDir)ModuleBase\Dependencies\zstd\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zstd_static.lib;lz4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -204,6 +204,8 @@
     <ClCompile Include="Dependencies\Luau\VM\src\lvmload.cpp" />
     <ClCompile Include="Dependencies\Luau\VM\src\lvmutils.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Environment\Environment.hpp" />
+    <ClCompile Include="Environment\Libs\FileSystem\FileSystem.hpp" />
     <ClCompile Include="Execution\Execution.hpp" />
     <ClCompile Include="NamedPipe.hpp" />
     <ClCompile Include="Tasks\TaskScheduler.hpp" />
