@@ -10,7 +10,7 @@ A full roblox internal base -- Everything you need for your own internal
 
 ## How to Update?
 Update files are located in `Update\Offsets.hpp` and `Update\Protection.hpp`.
-Get Latest offsets, Shuffles and Encryptions at discord.gg/getcloudy.xyz
+Get Latest offsets, Shuffles and Encryptions at discord.gg/getcloudy
 
 ### ON 40 STARS ILL ADD A DUMPER SRC TO IT ASWELL
 
